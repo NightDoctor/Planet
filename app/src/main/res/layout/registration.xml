@@ -1,0 +1,69 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mainBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_background" />
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/text_registration"
+        android:textColor="@color/sea"
+        android:textSize="10pt"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/planet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textWelcome"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/mars" />
+
+    <EditText
+        android:id="@+id/enterNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textWelcome"
+        android:layout_alignBottom="@+id/planet"
+        android:hint="@string/text_nickname"
+        android:background="@null"
+        android:textColorHint="@color/sea"
+        android:textAlignment="center"
+        android:textSize="7pt"
+        android:textColor="@color/light_green" />
+
+    <LinearLayout
+        android:id="@+id/startLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button_function"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:onClick="Submit"
+        android:text="@string/text_submit"
+        android:textColor="@color/light_green"
+        android:textSize="24sp" />
+    </LinearLayout>
+</RelativeLayout>

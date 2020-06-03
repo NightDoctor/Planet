@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Planet</string>
+    <string name="name_levels">Начать</string>
+
+    <string name="text_registration">Добро пожаловать, мой друг!</string>
+    <string name="text_nickname">Введите свой никнэйм:</string>
+    <string name="text_submit">Готово</string>
+    <string name="text_shop">Магазин</string>
+    <string name="text_mechanisms">Механизмы</string>
+    <string name="text_spaceships">Шаттлы</string>
+    <string name="text_gold">Золото</string>
+    <string name="text_black_matter">Материя</string>
+    <string name="text_missions">Миссии</string>
+    <string name="text_missions_all">Все</string>
+    <string name="text_missions_success">Готовые</string>
+    <string name="text_missions_available">Доступные</string>
+
+    <string name="planet_first">First</string>
+    <string name="planet_second">Second</string>
+    <string name="planet_third">Third</string>
+    <string name="planet_fourth">Fourth</string>
+    <string name="planet_fifth">Fifth</string>
+    <string name="planet_sixth">Sixth</string>
+    <string name="planet_seventh">Seventh</string>
+</resources>

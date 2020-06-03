@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_background" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/button_function"
+        android:gravity="center"
+        android:onClick="btnBackClick"
+        android:text="&#60;"
+        android:textColor="@color/light_green"
+        android:textSize="9pt" />
+
+    <ImageView
+        android:id="@+id/imageLevel"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mars" />
+
+    <TextView
+        android:id="@+id/textLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/light_green" />
+
+    <TextView
+        android:id="@+id/textCountGold"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/imageGold"
+        android:text="0"
+        android:textColor="@color/light_green"
+        android:textSize="9pt" />
+
+    <ImageView
+        android:id="@+id/imageGold"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@id/textCountBlackMatter"
+        android:src="@drawable/gold" />
+
+    <TextView
+        android:id="@+id/textCountBlackMatter"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/imageMater"
+        android:text="0"
+        android:textColor="@color/light_green"
+        android:textSize="9pt" />
+
+    <ImageView
+        android:id="@+id/imageMater"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/matter" />
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/shopMechanisms"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/button_function_square"
+        android:onClick="shopMechanismsClick"
+        android:text="@string/text_mechanisms"
+        android:textColor="@color/light_green"
+        android:textSize="4pt"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/shopSpaceships"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/shopMechanisms"
+        android:background="@drawable/button_function_square"
+        android:onClick="shopSpaceshipsClick"
+        android:text="@string/text_spaceships"
+        android:textColor="@color/light_green"
+        android:textSize="4pt"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/shopBlackMatter"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/view"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/shopGold"
+        android:background="@drawable/button_function_square"
+        android:onClick="shopBlackMatterClick"
+        android:text="@string/text_black_matter"
+        android:textColor="@color/light_green"
+        android:textSize="4pt"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/shopGold"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/view"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_function_square"
+        android:onClick="shopGoldClick"
+        android:text="@string/text_gold"
+        android:textColor="@color/light_green"
+        android:textSize="4pt"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/productFirst"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/generator"
+                android:onClick="firstItem" />
+
+            <ImageView
+                android:id="@+id/productSecond"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/productFirst"
+                android:src="@drawable/generator" />
+
+            <ImageView
+                android:id="@+id/productThird"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/productSecond"
+                android:src="@drawable/generator" />
+
+            <ImageView
+                android:id="@+id/productFourth"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/productThird"
+                android:src="@drawable/generator" />
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

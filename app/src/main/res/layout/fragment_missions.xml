@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button_function"
+            android:gravity="center"
+            android:text="&#60;"
+            android:textColor="@color/light_green"
+            android:textSize="9pt" />
+
+        <Button
+            android:id="@+id/btnSortAll"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_function"
+            android:gravity="center"
+            android:text="@string/text_missions_all"
+            android:textColor="@color/light_green"
+            android:textSize="4pt" />
+
+        <Button
+            android:id="@+id/btnSortSuccess"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_function"
+            android:gravity="center"
+            android:text="@string/text_missions_success"
+            android:textColor="@color/light_green"
+            android:textSize="4pt" />
+
+        <Button
+            android:id="@+id/btnSortAvailable"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_function"
+            android:gravity="center"
+            android:text="@string/text_missions_available"
+            android:textColor="@color/light_green"
+            android:textSize="4pt" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listMissions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

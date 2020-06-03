@@ -1,0 +1,116 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_background" />
+
+    <ImageView
+        android:id="@+id/planetFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/mars" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:onClick="btnBackFromPlanet"
+        android:background="@drawable/button_function"
+        android:gravity="center"
+        android:text="&#60;"
+        android:textSize="9pt"
+        android:textColor="@color/light_green"/>
+
+    <ImageView
+        android:id="@+id/imageLevel"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mars" />
+
+    <TextView
+        android:id="@+id/textLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:gravity="center"
+        android:textColor="@color/light_green"/>
+
+    <TextView
+        android:id="@+id/textCountGold"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_toLeftOf="@id/imageGold"
+        android:layout_marginRight="5dp"
+        android:text="0"
+        android:textSize="9pt"
+        android:textColor="@color/light_green"/>
+
+    <ImageView
+        android:id="@+id/imageGold"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_toLeftOf="@id/textCountBlackMatter"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/gold" />
+
+    <TextView
+        android:id="@+id/textCountBlackMatter"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_toLeftOf="@id/imageMater"
+        android:layout_marginRight="5dp"
+        android:text="0"
+        android:textSize="9pt"
+        android:textColor="@color/light_green"/>
+
+    <ImageView
+        android:id="@+id/imageMater"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_toLeftOf="@id/btnShop"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/matter" />
+
+    <Button
+        android:id="@+id/btnShop"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:onClick="btnShopFromPlanet"
+        android:background="@drawable/button_function"
+        android:gravity="center"
+        android:text="@string/text_shop"
+        android:textSize="5pt"
+        android:textColor="@color/light_green"/>
+
+    <Button
+        android:id="@+id/btnMissions"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_function"
+        android:gravity="center"
+        android:onClick="showMissions"
+        android:text="@string/text_missions"
+        android:textColor="@color/light_green"
+        android:textSize="5pt" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
